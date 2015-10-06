@@ -1,0 +1,22 @@
+Xoplax OS
+=========
+
+Getting Started
+---------------
+To get started with Android/Xoplax OS, you'll need to get familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
+To initialize your local repository using the Xoplax OS trees, use a command like this :
+
+	repo init -u git://github.com/XoplaxOS/android.git -b xos-1.0
+
+Then sync up :
+
+	repo sync
+
+Please see the [Xoplax Dev Website](http://os.xoplaxdev.org) for building instructions.
+For more information about the contributor and how it is structured, please read our Thread in [KasKus](kaskus.co.id/thread/560759f8e05227795c8b4569/official-xoplax-os/1)
+
+Buildbot
+--------
+All supported devices are built nightly and periodically as changes are commited to ensure the source trees remain buildable.
+You can view the current build statuses at [XoplaxDev Jenkins](http://jenkins.xoplaxdev.org:8080/)
+
