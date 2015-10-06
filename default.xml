@@ -501,6 +501,5 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
   <project path="vendor/xoplax" name="XoplaxOS/android_vendor_xoplax" revision="xos-1.0" />
-    <copyfile src="bootimage/Android.mk" dest="kernel/Android.mk" />
-  </project>
+  <copyfile src="bootimage/Android.mk" dest="kernel/Android.mk" />
 </manifest>
