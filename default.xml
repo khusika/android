@@ -405,10 +405,10 @@
   <project path="packages/apps/VideoEditor" name="CyanogenMod/android_packages_apps_VideoEditor" />
   <project path="packages/apps/VoiceDialer" name="CyanogenMod/android_packages_apps_VoiceDialer" />
   <project path="packages/apps/VoicePlus" name="CyanogenMod/android_packages_apps_VoicePlus" />
-  <project path="packages/apps/KernelAdiutor" name="Grarak/KernelAdiutor" "revision="master" />
-  <project path="packages/apps/OmniSwitch" name="PAC-ROM/android_packages_apps_OmniSwitch" "revision="pac-4.4" />
-  <project path="packages/apps/HALO" name="PAC-ROM/android_packages_apps_HALO" "revision="pac-4.4" />
-  <project path="packages/apps/ScreenRecorder" name="PAC-ROM/android_packages_apps_ScreenRecorder" "revision="pac-4.4" />
+  <project path="packages/apps/KernelAdiutor" name="Grarak/KernelAdiutor" revision="master" />
+  <project path="packages/apps/OmniSwitch" name="PAC-ROM/android_packages_apps_OmniSwitch" revision="pac-4.4" />
+  <project path="packages/apps/HALO" name="PAC-ROM/android_packages_apps_HALO" revision="pac-4.4" />
+  <project path="packages/apps/ScreenRecorder" name="PAC-ROM/android_packages_apps_ScreenRecorder" revision="pac-4.4" />
   <project path="packages/experimental" name="CyanogenMod/android_packages_experimental" />
   <project path="packages/inputmethods/LatinIME" name="CyanogenMod/android_packages_inputmethods_LatinIME" />
   <project path="packages/inputmethods/OpenWnn" name="CyanogenMod/android_packages_inputmethods_OpenWnn" />
