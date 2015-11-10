@@ -18,6 +18,9 @@
            sync-c="true"
            sync-j="4" />
 
+  <remote name="bitbucket" 
+          fetch="https://bitbucket.org/" />
+
   <project path="build" name="XoplaxOS/android_build" groups="pdk,tradefed" revision="xos-2.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
@@ -590,4 +593,28 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" />
   <project path="vendor/xoplax" name="XoplaxOS/android_vendor_xoplax" revision="xos-2.1" />
   <project path="vendor/cmsdk" name="CyanogenMod/cm_platform_sdk" />
+
+   <!-- SABERMOD ROM TOOLCHAINS -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-sm" name="infected-lp/sm_arm-linux-androideabi-4.8.x" remote="github" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-sm" name="infected-lp/sm_arm-linux-androideabi-4.9.x" remote="github" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-hybrid" name="infected-lp/sm_rom_4.9_hybrid" remote="github" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.1-sm" name="TeamBliss-LP/arm-linux-androideabi-5.1" remote="github" revision="master" />
+
+  <!-- SAMBERMOD KERNEL TOOLCAHINS -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8-sm" name="infected-lp/sm_arm-eabi-4.8.x" remote="github" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-sm" name="infected-lp/sm_arm-eabi-4.9.x" remote="github" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-hybrid" name="infected-lp/sm_kernel_4.9_hybrid" remote="github" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.1-sm" name="TeamBliss-LP/arm-eabi-5.1" remote="github" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2-sm" name="xanaxdroid/arm-eabi-5.2" remote="bitbucket" revision="sabermod" />
+
+   <!-- LINARO ROM TOOLCHAINS -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-linaro" name="UBERTC/arm-linux-androideabi-4.8" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-linaro" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.2-linaro" name="UBERTC/arm-linux-androideabi-5.2" remote="bitbucket" revision="master" />
+  
+  <!-- LINARO KERNEL TOOLCHAINS -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8-linaro" name="UBERTC/arm-eabi-4.8" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-linaro" name="UBERTC/arm-eabi-4.9" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2-linaro" name="UBERTC/arm-eabi-5.2" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.0-linaro" name="UBERTC/arm-eabi-6.0" remote="bitbucket" revision="master" />
 </manifest>
