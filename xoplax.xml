@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="xoplax"
+           fetch="https://github.com/XoplaxOS"
+           revision="refs/heads/xos-2.1" />
+
+  <remote name="bitbucket" 
+          fetch="https://bitbucket.org/" />
+
+  <!-- XoplaxOS -->
+  <project path="android" name="android" remote="xoplax" />
+  <project path="build" name="android_build" groups="pdk,tradefed" remote="xoplax" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="frameworks/base" name="android_frameworks_base" remote="xoplax" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="xoplax" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="xoplax" />
+  <project path="packages/apps/SetupWizard" name="android_packages_apps_SetupWizard" remote="xoplax" />
+  <project path="packages/apps/Launcher" name="android_packages_apps_Launcher" remote="xoplax" />
+  <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="xoplax" />
+  <project path="system/core" name="android_system_core" groups="pdk" remote="xoplax" />
+  <project path="vendor/xoplax" name="android_vendor_xoplax" remote="xoplax" />
+
+  <!-- SABERMOD TOOLCHAINS -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-sm" name="infected-lp/sm_arm-linux-androideabi-4.8.x" remote="github" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-sm" name="infected-lp/sm_arm-linux-androideabi-4.9.x" remote="github" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-hybrid" name="infected-lp/sm_rom_4.9_hybrid" remote="github" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.1-sm" name="TeamBliss-LP/arm-linux-androideabi-5.1" remote="github" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8-sm" name="infected-lp/sm_arm-eabi-4.8.x" remote="github" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-sm" name="infected-lp/sm_arm-eabi-4.9.x" remote="github" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-hybrid" name="infected-lp/sm_kernel_4.9_hybrid" remote="github" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.1-sm" name="TeamBliss-LP/arm-eabi-5.1" remote="github" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2-sm" name="xanaxdroid/arm-eabi-5.2" remote="bitbucket" revision="sabermod" />
+
+  <!-- UBERTC TOOLCHAINS -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-linaro" name="UBERTC/arm-linux-androideabi-4.8" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-linaro" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.2-linaro" name="UBERTC/arm-linux-androideabi-5.2" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8-linaro" name="UBERTC/arm-eabi-4.8" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-linaro" name="UBERTC/arm-eabi-4.9" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.2-linaro" name="UBERTC/arm-eabi-5.2" remote="bitbucket" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.0-linaro" name="UBERTC/arm-eabi-6.0" remote="bitbucket" revision="master" />
+
+</manifest>
