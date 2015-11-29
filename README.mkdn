@@ -12,7 +12,25 @@ Then sync up :
 
 	repo sync
 
-Please see the [Xoplax Dev Website](http://os.xoplaxdev.org) for building instructions.
+How to build?
+-------------
+To get started with source building, make sure you know what is device tree, vendor blobs and kernel source.
+After you get and put your device tree, vendor blobs, and kernel source in correct directory, just use our build wizard
+
+	build
+
+Then enter your device codename, started with "xos_" prefix and "-userdebug" at the end. Like this :
+
+	xos_armani-userdebug
+or
+	xos_degas3g-userdebug
+
+THis can take up to 1 day, depend on your computer specification and operating condition. 
+Make sure your computer has a good cooling system, because we will need full computer resources for build proccess, especially CPU.
+
+
+Contributor
+------------
 For more information about the contributor and how it is structured, please read our Thread in [KasKus](http://kaskus.co.id/thread/560759f8e05227795c8b4569/official-xoplax-os/1)
 
 Buildbot
